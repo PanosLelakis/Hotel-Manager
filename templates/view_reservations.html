@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}View Reservations Page{% endblock %}
+{% block content %}
+	<table class="table table-bordered border-primary" style="width:90%" border="1">
+		<tr>
+			<th>Name</th>
+			<th>Room</th>
+			<th>Date from</th>
+			<th>Date to</th>
+			<th>Notes</th>
+		</tr>
+		{% for item in values %}
+			<tr>
+				<td>{{item.name}}</td> 
+				<td>{{item.room}}</td> 
+				<td>{{item.date_from}}</td>
+				<td>{{item.date_to}}</td>
+				<td>{{item.notes}}</td>
+			</tr>
+		{% endfor %}
+	</table>
+{% endblock %}

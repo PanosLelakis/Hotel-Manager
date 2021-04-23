@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}View Clients Page{% endblock %}
+{% block content %}
+	<table class="table table-bordered border-primary" style="width:90%" border="1">
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Phone</th>
+			<th>Email</th>
+		</tr>
+		{% for item in values %}
+			<tr>
+				<td>{{item.name}}</td> 
+				<td>{{item.age}}</td> 
+				<td>{{item.phone}}</td> 
+				<td>{{item.email}}</td>
+			</tr>
+		{% endfor %}
+	</table>
+{% endblock %}

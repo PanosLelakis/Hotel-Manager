@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Add Reservation Page{% endblock %}
+{% block content %}
+<form action="#" method="post">
+	<p>Name:	<input type="text" name="name" /></p>
+	<p>Room:	<input type="text" name="room" /></p>
+	<p>Date from:	<input type="date" name="date_from" />	to:		<input type="date" name="date_to" /></p>
+	<p>Age:		<input type="text" name="age" /></p>
+	<p>Phone:	<input type="text" name="phone" /></p>
+	<p>Email:	<input type="email" name="email" /></p>
+	<p>Notes:	<input type="text" name="notes" /></p>
+	<p><input type="submit" name="submit" /></p>
+</form>
+{% endblock %}

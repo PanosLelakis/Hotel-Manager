@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}View Rooms Page{% endblock %}
+{% block content %}
+	<table class="table table-bordered border-primary" style="width:90%" border="1">
+		<tr>
+			<th>Room</th>
+			<th>Reserved Dates</th>
+		</tr>
+		{% for item in values %}
+			<tr>
+				<td>{{item.room}}</td> 
+				<td>{{item.dates}}</td> 
+			</tr>
+		{% endfor %}
+	</table>
+{% endblock %}
