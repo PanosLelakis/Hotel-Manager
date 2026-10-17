@@ -1,6 +1,39 @@
 {% extends "base.html" %}
 {% block title %}Help Page{% endblock %}
 {% block content %}
-<h2>I suppose you are here because you need some help. Well... GOOD LUCK :)</h2>
-<p>(Text with instructions coming soon)</p>
+<h2>I suppose you are here because you need some help. Read carefully below:</h2>
+<table class="table table-bordered border-primary" border="0.5">
+	<tr>
+		<th>Page</th>
+		<th>Usage</th>
+	</tr>
+		<tr>
+			<td>Home</td> 
+			<td>General info about website, webpage view counter</td>
+		</tr>
+		<tr>
+			<td>View Reservations</td>
+			<td>View data about reservations (room, name, reserved dates, notes)</td>
+		</tr>
+		<tr>
+			<td>Add Reservation</td>
+			<td>Add reservation and client data (name, room and dates are required)  !Last day of reservation isn't added</td>		
+		</tr>
+		<tr>
+			<td>Delete Reservation</td>
+			<td>Delete reservation data</td>
+		</tr>
+		<tr>
+			<td>View Clients</td>
+			<td>View data about clients (name, age, phone number, email)  !Client isn't deleted after his reservation is deleted</td>
+		</tr>
+		<tr>
+			<td>Delete Client</td>
+			<td>Delete client data (the deletion of a client's data isn't allowed if a reservation exists under his name)</td>
+		</tr>
+		<tr>
+			<td>View Rooms</td>
+			<td>View which dates are reserved for each room</td>
+		</tr>
+</table>
 {% endblock %}
